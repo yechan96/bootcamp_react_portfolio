@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    height: 100%;
+}
+body{
+    background-image: url(assets/spikes.png);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.content-container, footer, .main-header{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+header{
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom: 2px solid #cccccc;
+}
+.main-header{
+    position: relative;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+}
+#header-left{
+    float: left;
+    font-family: 'Georgia',Times, 'Times New Roman', serif;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: #999999;
+}
+.flexer{
+    flex: 1 0 auto;
+}
+.content-container{
+    background-color: #ffffff;
+    margin-top: 40px;
+    position: relative;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dddddd;
+}
+#content-heading{
+    font-family: 'Georgia',Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    border-bottom: 4px solid #dddddd;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contents{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+#profile-pic{
+    float: left;
+    margin-right: 30px;
+}
+#texts{
+    vertical-align: top;
+    line-height: 1.5;
+}
+.text-input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 30px;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #777777;
+
+}
+textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 99%;
+    height: 200px;
+    color: #777777;
+    border-color: #bbbbbb;
+}
+.submit{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    max-width: 100px;
+    height: 40px;
+    font-size: medium;
+}
+.text-block{
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    bottom: 20%;
+    width: 272px;
+}
+footer{
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    background-color: #666666;
+    font-size: small;
+    height: 50px;
+    color: #cccccc;
+    flex-shrink: 0;
+    margin-top: 50px;
 }
