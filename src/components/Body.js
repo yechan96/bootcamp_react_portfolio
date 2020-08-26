@@ -13,7 +13,7 @@ function Body(props){
                 <br></br>
 
                 <div id="contents">
-                    <img class="image-fluid" id="profile-pic" src={require("../assets/profilePic.JPG")} width="30%"></img>
+                    <img className="image-fluid" id="profile-pic" src={require("../assets/profilePic.JPG")} width="30%"></img>
                     Hello my name is Ye Chan Lee and I'm currently working as a research associate at UCLA. 
                     I'm a recent graduate with a major in Computational Biology and a double minor 
                     in Japanese and Digital Humanities. Ever since I was a kid, 
@@ -41,58 +41,40 @@ function Body(props){
                     </div>
 
                     <br></br>
-                    <div class="row">
+                    <div className="row gallery">
 
-                            <figure class="col-sm-4 mx-2">
+                            <figure className="col-sm-5 gallery-item">
                                 <a href="https://intense-earth-41726.herokuapp.com/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/WeTrivia.png")}></img>
-                                    <div class="text-block ml-4">
+                                    <img className="img-thumbnail" src={require("../assets/WeTrivia.png")}></img>
+                                    <div className="text-block">
                                         We Trivia
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="col-sm-4 mx-2">
+                            <figure className="col-sm-5 gallery-item">
                                 <a href="https://yechan96.github.io/bootcamp_project1/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/Book.png")}></img>
-                                    <div class="text-block ml-4">
+                                    <img className="img-thumbnail" src={require("../assets/Book.png")}></img>
+                                    <div className="text-block">
                                         Book Search
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="col-sm-4 mx-2">
+                            <figure className="col-sm-5 gallery-item">
                                 <a href="https://yechan96.github.io/bootcamp_hw5_Day_Planner/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/Day.png")}></img>
-                                    <div class="text-block ml-4">
+                                    <img className="img-thumbnail" src={require("../assets/Day.png")}></img>
+                                    <div className="text-block">
                                         Day Planner
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="col-sm-4 mx-2">
+                            <figure className="col-sm-5 gallery-item">
                                 <a href="https://yechan96.github.io/bootcamp_hw6_WeatherDashboard/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/Weather.png")}></img>
-                                    <div class="text-block ml-4">
+                                    <img className="img-thumbnail" src={require("../assets/Weather.png")}></img>
+                                    <div className="text-block">
                                         Weather Dashboard
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <figure class="col-sm-4 mx-2">
-                                <a href="https://radiant-plateau-11869.herokuapp.com/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/Note Taker.png")}></img>
-                                    <div class="text-block ml-4">
-                                        Note Taker
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <figure class="col-sm-4 mx-2">
-                                <a href="https://yechan-bootcamp-burger.herokuapp.com/" target="_blank">
-                                    <img class="img-thumbnail" src={require("../assets/Burgers.png")}></img>
-                                    <div class="text-block ml-4">
-                                        Burgers
                                     </div>
                                 </a>
                             </figure>
@@ -124,14 +106,14 @@ function Body(props){
                         </h3>
 
                         <a href="https://github.com/yechan96" target="_blank">
-                            <i class="fa fa-github fa-5x"></i>
+                            <i className="fa fa-github fa-5x"></i>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ye-chan-lee-250228139/" target="_blank">
-                            <i class="fa fa-linkedin fa-5x"></i>
+                            <i className="fa fa-linkedin fa-5x"></i>
                         </a>
                         
-                        <a class="btn btn-outline-dark btn-lg mb-4" href={require("../assets/YeChan_Lee_Resume.pdf")} target="_blank">
+                        <a className="btn btn-outline-dark btn-lg mb-4" href={require("../assets/YeChan_Lee_Resume.pdf")} target="_blank">
                             Resume
                         </a>
                     

@@ -6,12 +6,12 @@ function Header() {
     const [pageStatus, setPageStatus] = useState("about");
         return(
             <div>
-                <div className="main-header col-sm-12">
-                    <div className="p-2" id="header-left">
-                        <h3 className="align-middle">Ye Chan Lee</h3>
-                    </div>
-                    <nav className="navbar float-right">
-                        <ul className="nav mr-auto">
+                <div className="main-header">
+                    <nav className="navbar col-sm-8">
+                        <ul className="nav float-left">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#about" onClick={()=>setPageStatus("about")}>Home</a>
+                            </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#about" onClick={()=>setPageStatus("about")}>About</a>
                             </li>
@@ -26,12 +26,10 @@ function Header() {
                 </div>
 
             <div className="flexer">
-                <div className="content-container row">
-                    <div className="col-sm-12">
+                <div className="content-container col-sm-8">
                         <Body 
                             status ={pageStatus}
                         />
-                    </div>
                 </div>
             </div>
         
