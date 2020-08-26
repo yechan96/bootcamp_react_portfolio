@@ -43,6 +43,7 @@ a{
 .flexer{
     flex: 1 0 auto;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 .content-container{
     background-color: #ffffff;
@@ -52,7 +53,7 @@ a{
     margin-right: auto;
     border: 1px solid #dddddd;
 }
-#content-heading{
+.content-heading{
     font-family: 'Georgia',Times, 'Times New Roman', serif;
     color: #47748f;
     border-bottom: 4px solid #dddddd;
@@ -61,7 +62,7 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
-#contents{
+.contents{
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;

@@ -1,18 +1,17 @@
 import React from "react";
 
-function Body(props){
-    switch(props.status){
-        case "about":
+function Body(){
             return(
                 <div>
                 
-                <div id="content-heading">
+                <div className="content-container col-sm-8"id="about">
+                <div className="content-heading" >
                     <h3>About Me</h3>
                 </div>
 
                 <br></br>
 
-                <div id="contents">
+                <div className="contents">
                     <img className="image-fluid" id="profile-pic" src={require("../assets/profilePic.JPG")} width="30%"></img>
                     Hello my name is Ye Chan Lee and I'm currently working as a research associate at UCLA. 
                     I'm a recent graduate with a major in Computational Biology and a double minor 
@@ -31,12 +30,11 @@ function Body(props){
                     it would be exciting to live in Japan one day. Finally, I like listening to music and going to concerts and karaoke. 
                     As per usual, I listen to a bunch of different genres and I do not mind listening to all of them in one playlist. 
                 </div>
-            </div>
-            );
-        case "portfolio":
-            return(
-                <div>
-                    <div id="content-heading">
+                </div>
+
+
+                <div className="content-container col-sm-8"id="portfolio">
+                <div className="content-heading" >
                         <h3>Portfolio</h3>
                     </div>
 
@@ -80,19 +78,17 @@ function Body(props){
                             </figure>
 
                     </div>
-
                 </div>
-            );
-        case "contact":
-            return(
-                <div>
-                    <div id="content-heading">
+
+
+                <div className="content-container col-sm-8"id="contact">
+                <div className="content-heading" >
                         <h3>Contact</h3>
                     </div>
 
                     <br></br>
                 
-                    <div id="contents">
+                    <div className="contents">
                         <p>
                             Email: yechanlee96@gmail.com
                         </p>
@@ -120,10 +116,9 @@ function Body(props){
                     </div>
 
                 </div>
+
+                </div>
             );
-        default:
-        break;
-    }
 }
 
 export default Body;
