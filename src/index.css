@@ -1,6 +1,8 @@
 
 html{
     height: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 body{
     height: 100%;
@@ -43,15 +45,19 @@ a{
 .flexer{
     flex: 1 0 auto;
     min-height: 100vh;
-    scroll-behavior: smooth;
+}
+.anchor{
+    position: relative;
+    top:-6em;
+    visibility: hidden;
+    scroll-snap-align: start;
 }
 .content-container{
-    background-color: #ffffff;
     margin-top: 6em;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #dddddd;
+    min-height: 78vh;
 }
 .content-heading{
     font-family: 'Georgia',Times, 'Times New Roman', serif;
@@ -73,6 +79,30 @@ a{
 #profile-pic{
     float: left;
     margin-right: 30px;
+}
+.wrapper{
+    position: absolute;
+    top: -25vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#faceshot{
+    margin-left: 6%;
+    clip-path: circle(15% at 47% 50%);
+    width: 80%;
+}
+.name{
+    position: absolute;  
+    bottom: 0;  
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    height: 25vw;
+    min-height: 150px;
+    color: white;
 }
 #texts{
     vertical-align: top;
@@ -123,8 +153,10 @@ textarea{
 footer{
     text-align: center;
     background-color: #47748f;
-    font-size: small;
-    height: 50px;
+    font-size: 12px;
+    height: 3em;
     color: #ffffff;
     flex-shrink: 0;
+    margin-top: 2em;
+    line-height: 300%;
 }

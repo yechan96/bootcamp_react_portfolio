@@ -2,9 +2,19 @@ import React from "react";
 
 function Body(){
             return(
-                <div>
+                <div className="bodyCont">
+
+                <div className="content-container col-sm-8"id="faceshotCont">
+                <div className="anchor" id="home"></div>
+                <div className="wrapper">
+                    <img id="faceshot" alt="faceshot" src={require("../assets/faceShot.jpg")} width="30%"></img>
+                    <div className="name">Ye Chan Lee <br></br> Staff Research Associate | Full Stack Developer</div>
+                </div>
+                </div>
                 
-                <div className="content-container col-sm-8"id="about">
+                
+                <div className="content-container col-sm-8">
+                <div className="anchor" id="about"></div>
                 <div className="content-heading" >
                     <h3>About Me</h3>
                 </div>
@@ -12,7 +22,7 @@ function Body(){
                 <br></br>
 
                 <div className="contents">
-                    <img className="image-fluid" id="profile-pic" src={require("../assets/profilePic.JPG")} width="30%"></img>
+                    <img className="image-fluid" id="profile-pic" alt="profile-pic" src={require("../assets/profilePic.JPG")} width="30%"></img>
                     Hello my name is Ye Chan Lee and I'm currently working as a research associate at UCLA. 
                     I'm a recent graduate with a major in Computational Biology and a double minor 
                     in Japanese and Digital Humanities. Ever since I was a kid, 
@@ -33,7 +43,8 @@ function Body(){
                 </div>
 
 
-                <div className="content-container col-sm-8"id="portfolio">
+                <div className="content-container col-sm-8">
+                <div className="anchor" id="portfolio"></div>
                 <div className="content-heading" >
                         <h3>Portfolio</h3>
                     </div>
@@ -42,8 +53,8 @@ function Body(){
                     <div className="row gallery">
 
                             <figure className="col-sm-5 gallery-item">
-                                <a href="https://intense-earth-41726.herokuapp.com/" target="_blank">
-                                    <img className="img-thumbnail" src={require("../assets/WeTrivia.png")}></img>
+                                <a href="https://intense-earth-41726.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <img className="img-thumbnail" alt="WeTrivia" src={require("../assets/WeTrivia.png")}></img>
                                     <div className="text-block">
                                         We Trivia
                                     </div>
@@ -51,8 +62,8 @@ function Body(){
                             </figure>
 
                             <figure className="col-sm-5 gallery-item">
-                                <a href="https://yechan96.github.io/bootcamp_project1/" target="_blank">
-                                    <img className="img-thumbnail" src={require("../assets/Book.png")}></img>
+                                <a href="https://yechan96.github.io/bootcamp_project1/" target="_blank" rel="noopener noreferrer">
+                                    <img className="img-thumbnail" alt="Book Search" src={require("../assets/Book.png")}></img>
                                     <div className="text-block">
                                         Book Search
                                     </div>
@@ -60,8 +71,8 @@ function Body(){
                             </figure>
 
                             <figure className="col-sm-5 gallery-item">
-                                <a href="https://yechan96.github.io/bootcamp_hw5_Day_Planner/" target="_blank">
-                                    <img className="img-thumbnail" src={require("../assets/Day.png")}></img>
+                                <a href="https://yechan96.github.io/bootcamp_hw5_Day_Planner/" target="_blank" rel="noopener noreferrer">
+                                    <img className="img-thumbnail"  alt="Day Planner" src={require("../assets/Day.png")}></img>
                                     <div className="text-block">
                                         Day Planner
                                     </div>
@@ -69,8 +80,8 @@ function Body(){
                             </figure>
 
                             <figure className="col-sm-5 gallery-item">
-                                <a href="https://yechan96.github.io/bootcamp_hw6_WeatherDashboard/" target="_blank">
-                                    <img className="img-thumbnail" src={require("../assets/Weather.png")}></img>
+                                <a href="https://yechan96.github.io/bootcamp_hw6_WeatherDashboard/" target="_blank" rel="noopener noreferrer">
+                                    <img className="img-thumbnail" alt="Weather" src={require("../assets/Weather.png")}></img>
                                     <div className="text-block">
                                         Weather Dashboard
                                     </div>
@@ -81,7 +92,8 @@ function Body(){
                 </div>
 
 
-                <div className="content-container col-sm-8"id="contact">
+                <div className="content-container col-sm-8">
+                <div className="anchor" id="contact"></div>
                 <div className="content-heading" >
                         <h3>Contact</h3>
                     </div>
@@ -101,15 +113,15 @@ function Body(){
                             Links
                         </h3>
 
-                        <a href="https://github.com/yechan96" target="_blank">
+                        <a href="https://github.com/yechan96" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-github fa-5x"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/ye-chan-lee-250228139/" target="_blank">
+                        <a href="https://www.linkedin.com/in/ye-chan-lee-250228139/" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-linkedin fa-5x"></i>
                         </a>
                         
-                        <a className="btn btn-outline-dark btn-lg mb-4" href={require("../assets/YeChan_Lee_Resume.pdf")} target="_blank">
+                        <a className="btn btn-outline-dark btn-lg mb-4" href={require("../assets/YeChan_Lee_Resume.pdf")} target="_blank" rel="noopener noreferrer">
                             Resume
                         </a>
                     

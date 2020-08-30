@@ -1,5 +1,5 @@
 
-import React, {useState} from "react";
+import React from "react";
 import Body from "./Body";
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
                     <nav className="navbar col-sm-8">
                         <ul className="nav float-left">
                             <li className="nav-item">
-                                <a className="nav-link" href="#about">Home</a>
+                                <a className="nav-link" href="#home">Home</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#about">About</a>

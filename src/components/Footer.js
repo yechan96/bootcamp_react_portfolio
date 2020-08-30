@@ -4,7 +4,7 @@ class Footer extends Component {
 
     render(){
         return(
-            <footer className="align-middle">Copyright ©</footer>
+            <footer>Copyright © 2020 Ye Chan Lee</footer>
         );
     }
 }
