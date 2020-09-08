@@ -13,7 +13,7 @@ body{
 }
 .content-container, footer, .main-header{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
+    color: white;
 }
 .main-header{
     position: fixed;
@@ -59,10 +59,17 @@ a{
     margin-right: auto;
     min-height: 78vh;
 }
+.contacts-container{
+    margin-top: 6em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
 .content-heading{
     font-family: 'Georgia',Times, 'Times New Roman', serif;
-    color: #47748f;
-    border-bottom: 4px solid #dddddd;
+    color: white;
+    border-bottom: 4px solid #47748f;
     margin-top: 10px;
     width: 95%;
     margin-left: auto;
@@ -104,6 +111,9 @@ a{
     min-height: 150px;
     color: white;
 }
+#aboutText{
+    font-size: 20px;
+}
 #texts{
     vertical-align: top;
     line-height: 1.5;
@@ -121,8 +131,7 @@ a{
 }
 .gallery-item{
     position: relative;
-    margin-right: 2em;
-    margin-left: 2em;
+    max-width: 90%;
 }
 textarea{
     margin-top: 10px;
@@ -149,6 +158,9 @@ textarea{
     bottom: 20%;
     right: 0;
     left: 1.9em;
+}
+#mail{
+    color: white;
 }
 footer{
     text-align: center;
