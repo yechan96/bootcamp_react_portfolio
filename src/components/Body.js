@@ -1,7 +1,46 @@
 import React from "react";
+import Items from "./Items";
 
 function Body(){
     const profilePic = require("../assets/faceShot.jpg");
+    const portfolioArr =[
+        {
+        name:"EduStation",
+        image:require("../assets/EduStation.png"),
+        summary: "A MERN based platform for teachers, students, and parents for effective communication. Teachers can make announcements and set events to remind parents. Parents and student then can communicate on a thread that's dynamically generated on each announcements and events.",
+        role: "",
+        tech: "",
+        github: "https://github.com/gwenniegwen/eduStation/",
+        live: "https://murmuring-oasis-74308.herokuapp.com/",
+        },
+        {
+        name:"WeTrivia",
+        image:require("../assets/WeTrivia.png"),
+        summary: "",
+        role: "",
+        tech: "",
+        github: "https://github.com/nickrayj45/WeTrivia/",
+        live: "https://intense-earth-41726.herokuapp.com/",
+        },
+        {
+        name:"Book Search",
+        image:require("../assets/Book.png"),
+        summary: "",
+        role: "",
+        tech: "",
+        github: "https://github.com/yechan96/bootcamp_project1/",
+        live: "https://yechan96.github.io/bootcamp_project1/",
+        },
+        {
+        name:"Particle Simulator",
+        image:require("../assets/Particle Simulator.png"),
+        summary: "",
+        role: "",
+        tech: "",
+        github: "https://github.com/intro-graphics-master/term-project-5/",
+        live: "https://intro-graphics-master.github.io/term-project-5/",
+        },
+    ];
             return(
                 <div className="bodyCont">
 
@@ -18,58 +57,23 @@ function Body(){
                 <div className="anchor" id="about"></div>
 
                 <div className="contents" id="aboutText">
-                    <br>
-                    </br>
+                <br></br>
                 Full stack web developer with a background in computational biology and digital humanities, aspiring to develop applications that will interweave liberal arts with modern technology. Recently graduated from a full stack bootcamp at UCLA Extension with refined skills in HTML, CSS, JavaScript, and MySQL. Inspired to create innovative and engaging web services through working collaboratively with like-minded team members. Equipped with time management and critical thinking skills acquired from research experience that can offer a novel aspect when tackling issues on any given project. 
                 <br></br>
                 <br></br>
-                This site was built using React.js. 
+                This site was built using React.js.
                 </div>
                 </div>
 
 
-                <div className="content-container col-sm-8">
+                <div className="content-container col-sm-10">
                 <div className="anchor" id="projects"></div>
-
-                    <br></br>
                     <div className="row gallery">
-
-                        <figure className="col-sm-6 gallery-item">
-                                <a href="https://murmuring-oasis-74308.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img className="img-fluid roundImg"  alt="EduStation" src={require("../assets/EduStation.png")}></img>
-                                    <div className="text-block">
-                                        EduStation
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <figure className="col-sm-6 gallery-item">
-                                <a href="https://intense-earth-41726.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img className="img-fluid roundImg" alt="WeTrivia" src={require("../assets/WeTrivia.png")}></img>
-                                    <div className="text-block">
-                                        We Trivia
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <figure className="col-sm-6 gallery-item">
-                                <a href="https://yechan96.github.io/bootcamp_project1/" target="_blank" rel="noopener noreferrer">
-                                    <img className="img-fluid roundImg" alt="Book Search" src={require("../assets/Book.png")}></img>
-                                    <div className="text-block">
-                                        Book Search
-                                    </div>
-                                </a>
-                            </figure>
-
-                            <figure className="col-sm-6 gallery-item">
-                                <a href="https://intro-graphics-master.github.io/term-project-5/" target="_blank" rel="noopener noreferrer">
-                                    <img className="img-fluid roundImg" alt="Particle Simulator" src={require("../assets/Particle Simulator.png")}></img>
-                                    <div className="text-block">
-                                        Particle Simulator
-                                    </div>
-                                </a>
-                            </figure>
-
+                        {portfolioArr.map( item => {
+                            return(
+                                <Items name={item.name} image={item.image} summary={item.summary} role={item.role} tech={item.tech} github={item.github} live={item.live}></Items>
+                            )
+                        })}
                     </div>
                 </div>
 
@@ -97,6 +101,8 @@ function Body(){
                 </div>
 
                 </div>
+
+                
             );
 }
 

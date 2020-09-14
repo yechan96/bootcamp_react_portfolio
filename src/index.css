@@ -39,8 +39,7 @@ body{
     color: #ffffff;
 }
 a{
-    padding: 15px;
-    text-decoration: none;
+    margin: 0.5em;
 }
 .flexer{
     flex: 1 0 auto;
@@ -133,6 +132,10 @@ a{
     position: relative;
     max-width: 90%;
 }
+.portfolioBtn{
+    margin-left: 2.5em;
+    margin-bottom: 3em;
+}
 textarea{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -155,11 +158,14 @@ textarea{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
     text-align: center;
-    bottom: 20%;
-    right: 0;
-    left: 1.9em;
+    bottom: 2.1em;
+    right: 1.75em;
+    left: 4.25em;
 }
 #mail{
+    color: white;
+}
+.linking{
     color: white;
 }
 footer{
