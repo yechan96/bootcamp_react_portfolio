@@ -1,38 +1,31 @@
 
-import React, {useState} from "react";
+import React from "react";
 import Body from "./Body";
 
 function Header() {
-    const [pageStatus, setPageStatus] = useState("about");
         return(
             <div>
-                <div className="main-header col-sm-12">
-                    <div className="p-2" id="header-left">
-                        <h3 className="align-middle">Ye Chan Lee</h3>
-                    </div>
-                    <nav className="navbar float-right">
-                        <ul className="nav mr-auto">
+                <div className="main-header">
+                    <nav className="navbar col-sm-8">
+                        <ul className="nav float-left">
                             <li className="nav-item">
-                                <a className="nav-link" href="#about" onClick={()=>setPageStatus("about")}>About</a>
+                                <a className="nav-link" href="#home">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#portfolio" onClick={()=>setPageStatus("portfolio")}>Portfolio</a>                        
+                                <a className="nav-link" href="#about">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact" onClick={()=>setPageStatus("contact")}>Contact</a>
+                                <a className="nav-link" href="#projects">Projects</a>                        
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
 
             <div className="flexer">
-                <div className="content-container row">
-                    <div className="col-sm-12">
-                        <Body 
-                            status ={pageStatus}
-                        />
-                    </div>
-                </div>
+                        <Body/>
             </div>
         
         </div>
