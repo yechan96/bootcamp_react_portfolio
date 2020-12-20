@@ -39,7 +39,7 @@ body{
     color: #ffffff;
 }
 a{
-    margin: 0.5em;
+    margin: em;
 }
 .flexer{
     flex: 1 0 auto;
